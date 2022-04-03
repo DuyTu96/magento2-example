@@ -1,0 +1,21 @@
+{
+    "name": "repo/magento2-blogs-module",
+    "description": "Repo post management",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com",
+            "role": "Module frame code generator. It's impossible not to confirm :)"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Repo\\Blogs\\": ""
+        }
+    }
+}

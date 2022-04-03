@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Repo_Posts::post_manager" module="Repo_Posts" resource="Magento_Backend::content" sortOrder="12" title="Post Manager"/>
+		<add
+			action="repo_posts/index/index"
+			id="Repo_Posts::list_post"
+			module="Repo_Posts"
+			parent="Repo_Posts::post_manager"
+			resource="Magento_Backend::content"
+			sortOrder="1"
+			title="List Post"
+		/>
+	</menu>
+</config>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Tudd::top_level" module="Tudd_Todo" resource="Magento_Backend::content" sortOrder="11" title="TuDD"/>
+		<add 
+			action="tudd/task/index" 
+			id="Tudd_Todo::tudd_todo_task" 
+			module="Tudd_Todo" 
+			parent="Tudd::top_level" 
+			resource="Tudd_Todo::content" 
+			sortOrder="1" 
+			title="Tasks"
+		/>
+		<add 
+			action="tudd/task/test" 
+			id="Tudd_Todo::test" 
+			module="Tudd_Todo" 
+			parent="Tudd::top_level" 
+			resource="Tudd_Todo::content" 
+			sortOrder="2" 
+			title="Test"
+		/>
+		<add 
+			id="Tudd_Todo::post" 
+			title="Manage Posts" 
+			module="Tudd_Todo" 
+			sortOrder="3" 
+			action="tudd/post" 
+			resource="Tudd_Todo::post" 
+			parent="Tudd::top_level"
+		/>
+	</menu>
+</config>
